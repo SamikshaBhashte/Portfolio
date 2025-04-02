@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samiksha Bhashte - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b85843f117.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f0f4f8; /* Light background color */
+        }
+        header {
+            background: linear-gradient(to right, #009688, #004d40); /* Teal gradient header */
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            border: 2px solid white; 
+            padding: 5px 10px; 
+            border-radius: 5px; 
+        }
+        #sidemenu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        #sidemenu li {
+            display: inline;
+        }
+        #sidemenu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        #sidemenu a:hover {
+            color: #ffdd57; /* Yellow on hover */
+        }
+        .header-text {
+            margin-top: 20px;
+        }
+        .header-text h1 {
+            font-size: 36px;
+            margin: 10px 0;
+        }
+        .header-text h4 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .header-text p {
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .btn {
+            background: #ffdd57; /* Button color */
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #ffd700; /* Darker button on hover */
+        }
+        .sub-title {
+            font-size: 28px;
+            margin: 20px 0;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .services-list {
+            display: flex;
+            justify-content: space-around;
+        }
+        .service {
+            text-align: left;
+            width: 30%;
+            position: relative;
+            transition: transform 0.3s;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .service:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .work-list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .work {
+            margin: 10px 0;
+        }
+        .contact-left, .contact-right {
+            width: 50%;
+            padding: 20px;
+        }
+        .contact-right {
+            padding-left: 40px;
+        }
+        .copyright {
+            text-align: center;
+            padding: 20px 0;
+        }
+        #contact {
+            background-color: #e0f7fa; /* Light cyan background */
+            padding: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .more-info {
+            display: none;
+            margin-top: 10px;
+        }
+        /* New styles for sections */
+        section {
+            background-color: #ffffff; /* White background for sections */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+        section:hover {
+            background-color: #f0f8ff; /* Light blue on hover */
+        }
+        /* Specific styles for each section */
+        #about {
+            background-color: #e8f5e9; /* Light green */
+        }
+        #experience {
+            background-color: #fff3e0; /* Light orange */
+        }
+        #services {
+            background-color: #e3f2fd; /* Light blue */
+        }
+        #projects {
+            background-color: #fce4ec; /* Light pink */
+        }
+        #contact {
+            background-color: #e0f7fa; /* Light cyan */
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">My Portfolio</div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>HI, I'm <span>Samiksha Bhashte</span></h1>
+                <h4>Software Developer</h4>
+                <p>
+                    <i class="fa-solid fa-envelope"></i> Email: <a href="mailto:samikshabhashte28@gmail.com" class="contact-info">samikshabhashte28@gmail.com</a> | 
+                    <i class="fa-solid fa-phone"></i> Phone: <span class="contact-info">+91 8767762763</span> | 
+                    <a href="https://www.linkedin.com/in/samikshabhashte" target="_blank" class="contact-info"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                </p>
+                <p>I'm Samiksha Bhashte, a Computer Engineering student with expertise in web development and mobile app development.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- ------------about----------- -->
+    <div id="about">
+        <div class="container">
+            <section>
+                <h1 class="sub-title">About Me</h1>
+                <p>Highly motivated and skilled student of Computer Science with a passion for developing innovative software solutions. Proficient in various programming languages and having experience in Web Development, Database Management, and Software Development. Ready to deliver high-quality work and achieve exceptional results.</p>
+            </section>
+        </div>
+    </div>
+
+    <!-- ----------experience---------- -->
+    <div id="experience">
+        <div class="container">
+            <section>
+                <h1 class="sub-title">Experience</h1>
+                <ul>
+                    <li><strong>Google Android Developer Virtual Internship</strong> (Jan - Mar 2024)<br>
+                        • Worked with Google Firebase to manage user inputted data across multiple platforms including web and mobile apps.<br>
+                        • Improved problem-solving skills by debugging and optimizing application performance and utilized Android Studio as a development environment in order to visualize the application in Android.
+                    </li><br>
+
+                    <li><strong>AWS Cloud Computing Virtual Internship</strong> (Sep - Nov 2023)<br>
+                        • Gained working knowledge of AWS services like Amazon S3, RDS, and Elastic Load Balancing and their practical applications.<br>
+                        • Contributed to designing and developing scalable cloud-based solutions using AWS infrastructure and improved skills in cloud computing.
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <!-- ----------services---------- -->
+    <div id="services">
+        <div class="container">
+            <section>
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div class="service">
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>Creating responsive and user-friendly web applications.</p>
+                        <button class="btn" onclick="toggleMoreInfo('webDev')">View More</button>
+                        <div id="webDev" class="more-info">
+                            <p>Creating responsive and user-friendly web applications using modern frameworks. Experience in building RESTful APIs and integrating third-party services.</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <i class="fa-solid fa-mobile-alt"></i>
+                        <h2>Mobile Development</h2>
+                        <p>Building mobile applications for Android platform.</p>
+                        <button class="btn" onclick="toggleMoreInfo('mobileDev')">View More</button>
+                        <div id="mobileDev" class="more-info">
+                            <p>Building mobile applications for Android platform using Flutter.</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Database Management</h2>
+                        <p>Managing and optimizing databases.</p>
+                        <button class="btn" onclick="toggleMoreInfo('dbManagement')">View More</button>
+                        <div id="dbManagement" class="more-info">
+                            <p>Managing and optimizing databases for efficient data storage and retrieval. Experience with SQL and NoSQL databases, including MySQL, MongoDB, and PostgreSQL.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- -------projects------- -->
+    <div id="projects">
+        <div class="container">
+            <section>
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <h3>Online Book Store Management System</h3>
+                        <p>• Designed a system enabling users to register, log in, browse available books, purchase items, and receive payment receipts after successful transactions.</p>
+                        <p>• Implemented admin functionalities for allowing efficient book inventory management (add, remove, update books), price adjustments, and tracking sales history that ensures seamless operations and data integrity.</p>
+                    </div>
+                    <div class="work">
+                        <h3>Breast Cancer Detection Software</h3>
+                        <p>• Developed a system that allows users to input symptoms and receive disease predictions using the K-Nearest Neighbors (KNN) algorithm helping in the early detection of breast cancer.</p>
+                        <p>• Enabled healthcare professionals to utilize the platform for early diagnosis and improving patient awareness and facilitating timely medical intervention.</p>
+                    </div>
+                    <div class="work">
+                        <h3>Hotel Booking Website</h3>
+                        <p>• Developed a website using WordPress for tourists to easily find hotels and book accommodations near tourist attractions.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- --------contact------ -->
+    <div id="contact">
+        <div class="container" id="contain">
+            <section>
+                <h1 class="sub-title">Contact Me</h1>
+                <div class="row">
+                    <div class="contact-left">
+                        <p><i class="fa-solid fa-paper-plane"></i> Email: <a href="mailto:samikshabhashte28@gmail.com">samikshabhashte28@gmail.com</a></p>
+                        <p><i class="fa-solid fa-phone"></i> Phone: +91-8767762763</p>
+                        <div class="social-icons">
+                            <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://twitter.com"><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                   <div class="mb-3">
+                <h6><label for="email" class="form-label">Email</label></h6>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+                <h6><label for="message" class="form-label">Message</label></h6>
+                <textarea class="form-control" id="message" rows="3" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" class="btnPrimary">Submit</button>
+        </form>
+    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> © 2025 All rights reserved.</p>
+    </div>
+
+    <script>
+        function toggleMoreInfo(serviceId) {
+            var moreInfo = document.getElementById(serviceId);
+            if (moreInfo.style.display === "none" || moreInfo.style.display === "") {
+                moreInfo.style.display = "block";
+            } else {
+                moreInfo.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
